@@ -29,7 +29,7 @@ void uart_initial(int BAUD){
 }
 void uart_transmit (float c)
 {
-	while(!(UCSR0A & (1<<UDRE0)));
+	while(!(UCSR0A&(1<<UDRE0)));
 	UDR0=c;
 }
 
